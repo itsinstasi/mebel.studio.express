@@ -43,6 +43,9 @@
     <meta property="og:locale" content="Ru-ru" />
     <meta property="og:site_name" content="mebel.studio.express" />
 
+	<!--modernizr-->
+	<script src="../js/vendors/modernizr-custom.js"></script>
+
 </head>
 <body>
     <!--[if lt IE 8]>
@@ -54,7 +57,7 @@
 		Вам нужно включить JavaScript в своем браузере, чтобы  отображение этой страницы было корректно.
     </noscript>
 	<div class="wrapper">
-		<header class="header">
+		<header class="header" id="js-header">
 			<div class="container">
 				<div class="header__wrap">
 					<div class="header__left">
@@ -68,249 +71,255 @@
 			</div>
 		</header>	
 		<div class="main">
-			<div class="stories" style="display: none;">
+			<div class="stories">
 				<div class="container">
-					<div class="stories__slider" id="js-stories-slider">
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="дизайнеры алматы">
-								<a href="../tags/./dizaynery-almaty.html">
-									<div class="stories__slide-pic"><img src="../img/og/dizaynery-almaty.png" alt="дизайнеры алматы" /></div>
-									<div class="stories__slide-txt">дизайнеры алматы</div>
-								</a>
+					<div class="stories__slider-wrap">
+						<div class="stories__slider" id="js-stories-slider">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="stories__slide" title="дизайнеры алматы">
+										<a href="../tags/./dizaynery-almaty.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/dizaynery-almaty.png);"></div>
+											<div class="stories__slide-txt">дизайнеры алматы</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="алматы мебель на заказ">
+										<a href="../tags/./almaty-mebel--na-zakaz.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/almaty-mebel--na-zakaz.png);"></div>
+											<div class="stories__slide-txt">алматы мебель на заказ</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="мебель для дома алматы">
+										<a href="../tags/./mebel--dlya-doma-almaty.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/mebel--dlya-doma-almaty.png);"></div>
+											<div class="stories__slide-txt">мебель для дома алматы</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="мебель">
+										<a href="../tags/./mebel-.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/mebel-.png);"></div>
+											<div class="stories__slide-txt">мебель</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="мебель для дома">
+										<a href="../tags/./mebel--dlya-doma.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/mebel--dlya-doma.png);"></div>
+											<div class="stories__slide-txt">мебель для дома</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="дизайнера лматы">
+										<a href="../tags/./dizaynera-lmaty.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/dizaynera-lmaty.png);"></div>
+											<div class="stories__slide-txt">дизайнера лматы</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="дизайнеры">
+										<a href="../tags/./dizaynery.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/dizaynery.png);"></div>
+											<div class="stories__slide-txt">дизайнеры</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="мебель на заказ">
+										<a href="../tags/./mebel--na-zakaz.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/mebel--na-zakaz.png);"></div>
+											<div class="stories__slide-txt">мебель на заказ</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="мягкая алматы">
+										<a href="../tags/./myagkaya-almaty.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/myagkaya-almaty.png);"></div>
+											<div class="stories__slide-txt">мягкая алматы</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="дизайнера алматы">
+										<a href="../tags/./dizaynera-almaty.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/dizaynera-almaty.png);"></div>
+											<div class="stories__slide-txt">дизайнера алматы</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="изготовление мебели">
+										<a href="../tags/./izgotovlenie-mebeli.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/izgotovlenie-mebeli.png);"></div>
+											<div class="stories__slide-txt">изготовление мебели</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="мебель на заказ алматы">
+										<a href="../tags/./mebel--na-zakaz-almaty.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/mebel--na-zakaz-almaty.png);"></div>
+											<div class="stories__slide-txt">мебель на заказ алматы</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="дизайн бюро">
+										<a href="../tags/./dizayn-byuro.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/dizayn-byuro.png);"></div>
+											<div class="stories__slide-txt">дизайн бюро</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="алматы мебель">
+										<a href="../tags/./almaty-mebel-.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/almaty-mebel-.png);"></div>
+											<div class="stories__slide-txt">алматы мебель</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="мебель алматы">
+										<a href="../tags/./mebel--almaty.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/mebel--almaty.png);"></div>
+											<div class="stories__slide-txt">мебель алматы</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="дизайнерам">
+										<a href="../tags/./dizayneram.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/dizayneram.png);"></div>
+											<div class="stories__slide-txt">дизайнерам</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="алматы дизайн">
+										<a href="../tags/./almaty-dizayn.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/almaty-dizayn.png);"></div>
+											<div class="stories__slide-txt">алматы дизайн</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="алматы">
+										<a href="../tags/./almaty.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/almaty.png);"></div>
+											<div class="stories__slide-txt">алматы</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="алматы заказ мебели">
+										<a href="../tags/./almaty-zakaz-mebeli.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/almaty-zakaz-mebeli.png);"></div>
+											<div class="stories__slide-txt">алматы заказ мебели</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="изготовление мебели на заказ">
+										<a href="../tags/./izgotovlenie-mebeli-na-zakaz.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/izgotovlenie-mebeli-na-zakaz.png);"></div>
+											<div class="stories__slide-txt">изготовление мебели на заказ</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="кухни на заказ">
+										<a href="../tags/./kukhni-na-zakaz.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/kukhni-na-zakaz.png);"></div>
+											<div class="stories__slide-txt">кухни на заказ</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="алматы дизайнер интерьера">
+										<a href="../tags/./almaty-dizayner-inter-era.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/almaty-dizayner-inter-era.png);"></div>
+											<div class="stories__slide-txt">алматы дизайнер интерьера</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="изготовление мебели на заказ алматы">
+										<a href="../tags/./izgotovlenie-mebeli-na-zakaz-almaty.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/izgotovlenie-mebeli-na-zakaz-almaty.png);"></div>
+											<div class="stories__slide-txt">изготовление мебели на заказ алматы</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="дизайн интерьера">
+										<a href="../tags/./dizayn-inter-era.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/dizayn-inter-era.png);"></div>
+											<div class="stories__slide-txt">дизайн интерьера</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="мягкая мебель">
+										<a href="../tags/./myagkaya-mebel-.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/myagkaya-mebel-.png);"></div>
+											<div class="stories__slide-txt">мягкая мебель</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="изготовление на заказ">
+										<a href="../tags/./izgotovlenie-na-zakaz.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/izgotovlenie-na-zakaz.png);"></div>
+											<div class="stories__slide-txt">изготовление на заказ</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="на заказ мебель алматы">
+										<a href="../tags/./na-zakaz-mebel--almaty.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/na-zakaz-mebel--almaty.png);"></div>
+											<div class="stories__slide-txt">на заказ мебель алматы</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="изготовление мебели алматы">
+										<a href="../tags/./izgotovlenie-mebeli-almaty.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/izgotovlenie-mebeli-almaty.png);"></div>
+											<div class="stories__slide-txt">изготовление мебели алматы</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="дизаин мебели">
+										<a href="../tags/./dizain-mebeli.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/dizain-mebeli.png);"></div>
+											<div class="stories__slide-txt">дизаин мебели</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="меьель для дома">
+										<a href="../tags/./me-el--dlya-doma.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/me-el--dlya-doma.png);"></div>
+											<div class="stories__slide-txt">меьель для дома</div>
+										</a>
+									</div>
+								</div>
 							</div>
 						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="алматы мебель на заказ">
-								<a href="../tags/./almaty-mebel--na-zakaz.html">
-									<div class="stories__slide-pic"><img src="../img/og/almaty-mebel--na-zakaz.png" alt="алматы мебель на заказ" /></div>
-									<div class="stories__slide-txt">алматы мебель на заказ</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="мебель для дома алматы">
-								<a href="../tags/./mebel--dlya-doma-almaty.html">
-									<div class="stories__slide-pic"><img src="../img/og/mebel--dlya-doma-almaty.png" alt="мебель для дома алматы" /></div>
-									<div class="stories__slide-txt">мебель для дома алматы</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="мебель">
-								<a href="../tags/./mebel-.html">
-									<div class="stories__slide-pic"><img src="../img/og/mebel-.png" alt="мебель" /></div>
-									<div class="stories__slide-txt">мебель</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="мебель для дома">
-								<a href="../tags/./mebel--dlya-doma.html">
-									<div class="stories__slide-pic"><img src="../img/og/mebel--dlya-doma.png" alt="мебель для дома" /></div>
-									<div class="stories__slide-txt">мебель для дома</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="дизайнера лматы">
-								<a href="../tags/./dizaynera-lmaty.html">
-									<div class="stories__slide-pic"><img src="../img/og/dizaynera-lmaty.png" alt="дизайнера лматы" /></div>
-									<div class="stories__slide-txt">дизайнера лматы</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="дизайнеры">
-								<a href="../tags/./dizaynery.html">
-									<div class="stories__slide-pic"><img src="../img/og/dizaynery.png" alt="дизайнеры" /></div>
-									<div class="stories__slide-txt">дизайнеры</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="мебель на заказ">
-								<a href="../tags/./mebel--na-zakaz.html">
-									<div class="stories__slide-pic"><img src="../img/og/mebel--na-zakaz.png" alt="мебель на заказ" /></div>
-									<div class="stories__slide-txt">мебель на заказ</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="мягкая алматы">
-								<a href="../tags/./myagkaya-almaty.html">
-									<div class="stories__slide-pic"><img src="../img/og/myagkaya-almaty.png" alt="мягкая алматы" /></div>
-									<div class="stories__slide-txt">мягкая алматы</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="дизайнера алматы">
-								<a href="../tags/./dizaynera-almaty.html">
-									<div class="stories__slide-pic"><img src="../img/og/dizaynera-almaty.png" alt="дизайнера алматы" /></div>
-									<div class="stories__slide-txt">дизайнера алматы</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="изготовление мебели">
-								<a href="../tags/./izgotovlenie-mebeli.html">
-									<div class="stories__slide-pic"><img src="../img/og/izgotovlenie-mebeli.png" alt="изготовление мебели" /></div>
-									<div class="stories__slide-txt">изготовление мебели</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="мебель на заказ алматы">
-								<a href="../tags/./mebel--na-zakaz-almaty.html">
-									<div class="stories__slide-pic"><img src="../img/og/mebel--na-zakaz-almaty.png" alt="мебель на заказ алматы" /></div>
-									<div class="stories__slide-txt">мебель на заказ алматы</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="дизайн бюро">
-								<a href="../tags/./dizayn-byuro.html">
-									<div class="stories__slide-pic"><img src="../img/og/dizayn-byuro.png" alt="дизайн бюро" /></div>
-									<div class="stories__slide-txt">дизайн бюро</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="алматы мебель">
-								<a href="../tags/./almaty-mebel-.html">
-									<div class="stories__slide-pic"><img src="../img/og/almaty-mebel-.png" alt="алматы мебель" /></div>
-									<div class="stories__slide-txt">алматы мебель</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="мебель алматы">
-								<a href="../tags/./mebel--almaty.html">
-									<div class="stories__slide-pic"><img src="../img/og/mebel--almaty.png" alt="мебель алматы" /></div>
-									<div class="stories__slide-txt">мебель алматы</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="дизайнерам">
-								<a href="../tags/./dizayneram.html">
-									<div class="stories__slide-pic"><img src="../img/og/dizayneram.png" alt="дизайнерам" /></div>
-									<div class="stories__slide-txt">дизайнерам</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="алматы дизайн">
-								<a href="../tags/./almaty-dizayn.html">
-									<div class="stories__slide-pic"><img src="../img/og/almaty-dizayn.png" alt="алматы дизайн" /></div>
-									<div class="stories__slide-txt">алматы дизайн</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="алматы">
-								<a href="../tags/./almaty.html">
-									<div class="stories__slide-pic"><img src="../img/og/almaty.png" alt="алматы" /></div>
-									<div class="stories__slide-txt">алматы</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="алматы заказ мебели">
-								<a href="../tags/./almaty-zakaz-mebeli.html">
-									<div class="stories__slide-pic"><img src="../img/og/almaty-zakaz-mebeli.png" alt="алматы заказ мебели" /></div>
-									<div class="stories__slide-txt">алматы заказ мебели</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="изготовление мебели на заказ">
-								<a href="../tags/./izgotovlenie-mebeli-na-zakaz.html">
-									<div class="stories__slide-pic"><img src="../img/og/izgotovlenie-mebeli-na-zakaz.png" alt="изготовление мебели на заказ" /></div>
-									<div class="stories__slide-txt">изготовление мебели на заказ</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="кухни на заказ">
-								<a href="../tags/./kukhni-na-zakaz.html">
-									<div class="stories__slide-pic"><img src="../img/og/kukhni-na-zakaz.png" alt="кухни на заказ" /></div>
-									<div class="stories__slide-txt">кухни на заказ</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="алматы дизайнер интерьера">
-								<a href="../tags/./almaty-dizayner-inter-era.html">
-									<div class="stories__slide-pic"><img src="../img/og/almaty-dizayner-inter-era.png" alt="алматы дизайнер интерьера" /></div>
-									<div class="stories__slide-txt">алматы дизайнер интерьера</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="изготовление мебели на заказ алматы">
-								<a href="../tags/./izgotovlenie-mebeli-na-zakaz-almaty.html">
-									<div class="stories__slide-pic"><img src="../img/og/izgotovlenie-mebeli-na-zakaz-almaty.png" alt="изготовление мебели на заказ алматы" /></div>
-									<div class="stories__slide-txt">изготовление мебели на заказ алматы</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="дизайн интерьера">
-								<a href="../tags/./dizayn-inter-era.html">
-									<div class="stories__slide-pic"><img src="../img/og/dizayn-inter-era.png" alt="дизайн интерьера" /></div>
-									<div class="stories__slide-txt">дизайн интерьера</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="мягкая мебель">
-								<a href="../tags/./myagkaya-mebel-.html">
-									<div class="stories__slide-pic"><img src="../img/og/myagkaya-mebel-.png" alt="мягкая мебель" /></div>
-									<div class="stories__slide-txt">мягкая мебель</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="изготовление на заказ">
-								<a href="../tags/./izgotovlenie-na-zakaz.html">
-									<div class="stories__slide-pic"><img src="../img/og/izgotovlenie-na-zakaz.png" alt="изготовление на заказ" /></div>
-									<div class="stories__slide-txt">изготовление на заказ</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="на заказ мебель алматы">
-								<a href="../tags/./na-zakaz-mebel--almaty.html">
-									<div class="stories__slide-pic"><img src="../img/og/na-zakaz-mebel--almaty.png" alt="на заказ мебель алматы" /></div>
-									<div class="stories__slide-txt">на заказ мебель алматы</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="изготовление мебели алматы">
-								<a href="../tags/./izgotovlenie-mebeli-almaty.html">
-									<div class="stories__slide-pic"><img src="../img/og/izgotovlenie-mebeli-almaty.png" alt="изготовление мебели алматы" /></div>
-									<div class="stories__slide-txt">изготовление мебели алматы</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="дизаин мебели">
-								<a href="../tags/./dizain-mebeli.html">
-									<div class="stories__slide-pic"><img src="../img/og/dizain-mebeli.png" alt="дизаин мебели" /></div>
-									<div class="stories__slide-txt">дизаин мебели</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="меьель для дома">
-								<a href="../tags/./me-el--dlya-doma.html">
-									<div class="stories__slide-pic"><img src="../img/og/me-el--dlya-doma.png" alt="меьель для дома" /></div>
-									<div class="stories__slide-txt">меьель для дома</div>
-								</a>
-							</div>
-						</div>
+						<div class="stories__arrow stories__arrow--prev" id="js-stories-prev"></div>
+						<div class="stories__arrow stories__arrow--next" id="js-stories-next"></div>
 					</div>
 				</div>
 			</div>
@@ -335,25 +344,50 @@
 					<div class="article__wrap" id="ja-article-wrap">
 						<div class="article-main">
 							<div class="article-content">
-								<div class="article-slider js-article-slider">
-									<div><div class="article-slide"><img data-lazy="https://scontent-arn2-2.cdninstagram.com/vp/f24b3965b80915450de12b1d2175aa02/5E283796/t51.2885-15/e35/64782846_474760273094895_6934237537189281712_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=103" alt=""></div></div>
-									<div><div class="article-slide"><img data-lazy="https://scontent-arn2-2.cdninstagram.com/vp/322c479ef66113fa12ac5cc6af6cfebf/5E320974/t51.2885-15/e35/62577559_159510978433168_4192899642160778497_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=104" alt=""></div></div>
-									<div><div class="article-slide"><img data-lazy="https://scontent-arn2-2.cdninstagram.com/vp/acb27fe99c71e799faeac1655aa76b3e/5E20E726/t51.2885-15/e35/65388072_176234263378227_397098489109355587_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=103" alt=""></div></div>
-									<div><div class="article-slide"><img data-lazy="https://scontent-arn2-2.cdninstagram.com/vp/33213f812abb0c82185e3b81ea439a52/5E2CFCF8/t51.2885-15/e35/62226913_480626019370081_7909880114047988659_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=101" alt=""></div></div>
-									<div><div class="article-slide"><img data-lazy="https://scontent-arn2-2.cdninstagram.com/vp/85865d77ee98ffce18d1eb41bd111fdb/5E1C2E1C/t51.2885-15/e35/65154952_685178655238875_1842657891448662315_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=103" alt=""></div></div>
-									<div><div class="article-slide"><img data-lazy="https://scontent-arn2-2.cdninstagram.com/vp/852ae4b8e700af1f81b26c5946468047/5E334544/t51.2885-15/e35/64211209_478198462723948_1304174882802218239_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=104" alt=""></div></div>
-									<div><div class="article-slide"><img data-lazy="https://scontent-arn2-2.cdninstagram.com/vp/c470948e8bf8c3f196d4e73800b3fa8b/5E309355/t51.2885-15/e35/64421478_592605401263016_8163448379391120627_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=108" alt=""></div></div>
-									<div><div class="article-slide"><img data-lazy="https://scontent-arn2-2.cdninstagram.com/vp/77e33218a56425fb9bb5907fb01cea27/5E2B4941/t51.2885-15/e35/62563770_620146178469235_2717511405187556287_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=107" alt=""></div></div>
-									<div><div class="article-slide"><img data-lazy="https://scontent-arn2-2.cdninstagram.com/vp/3a38865d158c210f9728c1f8cb0c9f1b/5E359345/t51.2885-15/e35/64351449_2280903505330543_2105027746283961476_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=107" alt=""></div></div>
-									<div><div class="article-slide"><img data-lazy="https://scontent-arn2-2.cdninstagram.com/vp/26caa38c5865190dcac3161009f66299/5E3803A7/t51.2885-15/e35/62267205_355258531853676_3437115305738089501_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=100" alt=""></div></div>
+								<div class="article-slider-wrap">
+									<div class="article-slider js-article-slider">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide article-slider__slide">
+												<img data-src="https://scontent-arn2-2.cdninstagram.com/vp/f24b3965b80915450de12b1d2175aa02/5E283796/t51.2885-15/e35/64782846_474760273094895_6934237537189281712_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=103" class="swiper-lazy" alt="">
+											</div>
+											<div class="swiper-slide article-slider__slide">
+												<img data-src="https://scontent-arn2-2.cdninstagram.com/vp/322c479ef66113fa12ac5cc6af6cfebf/5E320974/t51.2885-15/e35/62577559_159510978433168_4192899642160778497_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=104" class="swiper-lazy" alt="">
+											</div>
+											<div class="swiper-slide article-slider__slide">
+												<img data-src="https://scontent-arn2-2.cdninstagram.com/vp/acb27fe99c71e799faeac1655aa76b3e/5E20E726/t51.2885-15/e35/65388072_176234263378227_397098489109355587_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=103" class="swiper-lazy" alt="">
+											</div>
+											<div class="swiper-slide article-slider__slide">
+												<img data-src="https://scontent-arn2-2.cdninstagram.com/vp/33213f812abb0c82185e3b81ea439a52/5E2CFCF8/t51.2885-15/e35/62226913_480626019370081_7909880114047988659_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=101" class="swiper-lazy" alt="">
+											</div>
+											<div class="swiper-slide article-slider__slide">
+												<img data-src="https://scontent-arn2-2.cdninstagram.com/vp/5c1405df4210af2756e3ae3e9367137b/5E43BB1C/t51.2885-15/e35/65154952_685178655238875_1842657891448662315_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=103" class="swiper-lazy" alt="">
+											</div>
+											<div class="swiper-slide article-slider__slide">
+												<img data-src="https://scontent-arn2-2.cdninstagram.com/vp/852ae4b8e700af1f81b26c5946468047/5E334544/t51.2885-15/e35/64211209_478198462723948_1304174882802218239_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=104" class="swiper-lazy" alt="">
+											</div>
+											<div class="swiper-slide article-slider__slide">
+												<img data-src="https://scontent-arn2-2.cdninstagram.com/vp/c470948e8bf8c3f196d4e73800b3fa8b/5E309355/t51.2885-15/e35/64421478_592605401263016_8163448379391120627_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=108" class="swiper-lazy" alt="">
+											</div>
+											<div class="swiper-slide article-slider__slide">
+												<img data-src="https://scontent-arn2-2.cdninstagram.com/vp/77e33218a56425fb9bb5907fb01cea27/5E2B4941/t51.2885-15/e35/62563770_620146178469235_2717511405187556287_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=107" class="swiper-lazy" alt="">
+											</div>
+											<div class="swiper-slide article-slider__slide">
+												<img data-src="https://scontent-arn2-2.cdninstagram.com/vp/3a38865d158c210f9728c1f8cb0c9f1b/5E359345/t51.2885-15/e35/64351449_2280903505330543_2105027746283961476_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=107" class="swiper-lazy" alt="">
+											</div>
+											<div class="swiper-slide article-slider__slide">
+												<img data-src="https://scontent-arn2-2.cdninstagram.com/vp/c5bfe743b7b8537a9b8de4dfac02d3c4/5E5F90A7/t51.2885-15/e35/62267205_355258531853676_3437115305738089501_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=100" class="swiper-lazy" alt="">
+											</div>
+											<div class="article-slider-pagination js-article-slider-pagination"></div>
+											<div class="article-slider-arrow article-slider-arrow--prev js-article-slider-prev"></div>
+											<div class="article-slider-arrow article-slider-arrow--next js-article-slider-next"></div>
+										</div>
+									</div>
 								</div>
 								<p>Задача любого шкафа – это помочь сделать жизнь комфортнее и проще. Продукция нашей компании изготавливается строго в этом направлении. И благодаря многолетнему опыту работы мы можем гарантировать нашим клиентам следующие преимущества:<br/><br/>Высокая вместимость. Внутренняя область обширна и вместительна, благодаря чему здесь вы можете хранить все, что нужно: верхнюю одежду, нижнее белье, обувь, головные уборы, постельные принадлежности. В продаже есть даже экземпляры с отсеками для хранения мелкой бытовой техники: от утюгов до пылесосов;<br/><br/>Уникальный проект. Выбирая модель, вы можете приобрести шкафы на заказ по индивидуальным размерам, что позволит спроектировать мебель под реальные условия использования. Хотите ли вы разместить конструкцию в коридоре, спальне или рабочем кабинете – любой вопрос будет решен специалистами компании;<br/><br/>Простота эксплуатации. Дверь типа купе обеспечивает легкое использование даже одной рукой, не занимает лишнего пространства в открытом положении, что обеспечивает комфорт и удобство. Внешняя сторона двери может быть отделана декоративными панелями, рисунками или зеркалом в зависимости от проекта. При производстве мебели учитываются и модные тенденции в дизайне;<br/><br/>Эргономичность. Конструкция шкафа-купе позволяет ему органично вписываться в любую область помещения. Его можно поставить у стены, в подготовленную нишу или в углу комнаты. <br/>Заказать шкаф-купе по индивидуальным размерам выгодно! <br/>Комплексный подход к каждому клиенту – главный принцип работы компании. Приняв решение купить шкаф-купе на заказ, вы приобретаете не просто конструкцию из стен и полок – вы покупаете возможность создать мебель строго под свои запросы. Обратившись к нашим специалистам, клиент может подобрать:<br/><br/>Подходящие размеры;<br/><br/>Внешнюю отделку;<br/><br/>Внутреннее наполнение и другие детали.<br/><br/>Мы предоставляем бесплатный вызов мастера на дом, который проведет все необходимые замеры для будущего проекта. Также нашим специалистам можно доверить доставку, сборку и установку – все, что нужно, чтобы новый шкаф-купе был практичен, лаконичен и удобен. А еще демократичен в плане цены. Налаженные связи с поставщиками и проработанная политика фирмы позволяют клиентам покупать у нас.<br/></p> 
 							</div>
 						<div>
 							<a href="https://www.instagram.com/p/BzFruwlHIMm/" 
-								target="_blank" class="links-page-list__item-link">
-								<strong>Комментировать</strong>
-								<span>Instagram</span>
+								target="_blank" class="links-page-btn shake"><strong>Комментировать</strong>&nbsp;<span>Instagram</span>
 							</a>
 						</div>
 
@@ -372,7 +406,7 @@
 									<div class="article-more__item-pic-blind">
 										<span><i class="fa fa-comment-o" aria-hidden="true"></i>0</span> <span><i class="fa fa-heart" aria-hidden="true"></i>7</span>
 									</div>
-									<img src="https://scontent-arn2-2.cdninstagram.com/vp/8f1eda42129262c56a61fc69b4ad97fd/5E39C284/t51.2885-15/e35/67959967_2643360292427248_6142634026513027448_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=104" alt="Мебель для детской комнаты.">
+									<img src="https://scontent-arn2-2.cdninstagram.com/vp/22b8552fe8bc7e8d2dec90064f42421f/5E614F84/t51.2885-15/e35/67959967_2643360292427248_6142634026513027448_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=104" alt="Мебель для детской комнаты.">
 								</div>
 								<div class="article-more__item-name">Мебель для детской комнаты.</div>
 							</a>
@@ -399,7 +433,7 @@
 									<div class="article-more__item-pic-blind">
 										<span><i class="fa fa-comment-o" aria-hidden="true"></i>0</span> <span><i class="fa fa-heart" aria-hidden="true"></i>5</span>
 									</div>
-									<img src="https://scontent-arn2-2.cdninstagram.com/vp/25a21ec9df36460939d2c99fb1bdb0aa/5E19E03B/t51.2885-15/e35/68900820_930181950681759_7465575829937004728_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=103" alt="Диваны для кафе ресторанов и баров">
+									<img src="https://scontent-arn2-2.cdninstagram.com/vp/3ad260337feb8d698ce0a16643e1b358/5E416D3B/t51.2885-15/e35/68900820_930181950681759_7465575829937004728_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=103" alt="Диваны для кафе ресторанов и баров">
 								</div>
 								<div class="article-more__item-name">Диваны для кафе ресторанов и баров</div>
 							</a>
@@ -408,7 +442,7 @@
 									<div class="article-more__item-pic-blind">
 										<span><i class="fa fa-comment-o" aria-hidden="true"></i>0</span> <span><i class="fa fa-heart" aria-hidden="true"></i>5</span>
 									</div>
-									<img src="https://scontent-arn2-2.cdninstagram.com/vp/bf78a76b38d6881e1f18e164c0e1c247/5E1BCC1B/t51.2885-15/e35/67925212_376631196329745_3210088619138220076_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=109" alt="Диваны для ресторана">
+									<img src="https://scontent-arn2-2.cdninstagram.com/vp/e56761f8e5aa1996e4e293250606f5f3/5E43591B/t51.2885-15/e35/67925212_376631196329745_3210088619138220076_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=109" alt="Диваны для ресторана">
 								</div>
 								<div class="article-more__item-name">Диваны для ресторана</div>
 							</a>
@@ -481,11 +515,12 @@
 			</div>
 		</div>		
 	</div>
+	<!--swiper-->
+	<script src="../js/vendors/swiper.min.js"></script>
 	<!--jQuery-->
 	<script src="../js/vendors/jquery.min.js"></script>
-	<script src="../js/vendors/jquery.loadScroll.js"></script>
-	<!--device-->
-	<script src="../js/vendors/slick.min.js"></script>
+	<!--lazyloadxt-->
+	<script src="../js/vendors/jquery.lazyloadxt.js"></script>
 	<!--init-->
 	<script src="../js/jquery.init.js"></script>
 	<!--my scripts-->
