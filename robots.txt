@@ -1,2 +1,2 @@
 ﻿User-agent: *
-Sitemap: http://mebel-studio-express.itsinsta.site//sitemap.xml
+Sitemap: https://mebel-studio-express.itsinsta.site//sitemap.xml
